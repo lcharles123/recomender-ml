@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: playlist-recomender-ml
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: playlist-recomender-ml
+  template:
+    metadata:
+      labels:
+        app: playlist-recomender-ml
+    spec:
+      containers:
+      - name: ml-recomender
+        image: lcharles060/ml-recomender-service:0.1
+        # use to debug, ignore cache on creating deployment
+        imagePullPolicy: Always
