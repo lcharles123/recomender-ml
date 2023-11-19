@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
       - name: ml-recomender
-        image: lcharles060/ml-recomender-service:0.5
+        image: lcharles060/ml-recomender-service:0.6
         # use to debug, ignore cache on creating deployment
         imagePullPolicy: Always
         # this command override the one defined in Dockerfile
-        command: ["/bin/sh", "start_recomender.sh", "/bin/sh", "while sleep 1h ; do ; done"]
+        command: ["/bin/sh", "start_recomender.sh"]
