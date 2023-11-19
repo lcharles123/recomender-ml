@@ -21,4 +21,4 @@ spec:
         command: ["/bin/sh", "start_recomender.sh"]
       # restart only if container not exited successfully
       # this container is run once
-      restartPolicy: onFailure 
+      restartPolicy: OnFailure 
