@@ -17,3 +17,4 @@ spec:
         image: lcharles060/ml-recomender-service:0.5
         # use to debug, ignore cache on creating deployment
         imagePullPolicy: Always
+      restartPolicy: Never
