@@ -20,5 +20,3 @@ spec:
         # this command override the one defined in Dockerfile
         command: ["/bin/sh", "start_recomender.sh"]
         restartPolicy: Never
-      # restart only if container not exited successfully
-      restartPolicy: Always 
