@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: ml-recomender
-        image: lcharles060/ml-recomender-service:0.3
+        image: lcharles060/ml-recomender-service:0.4
         # use to debug, ignore cache on creating deployment
         imagePullPolicy: Always
