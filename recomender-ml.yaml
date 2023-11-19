@@ -17,6 +17,8 @@ spec:
         image: lcharles060/ml-recomender-service:0.5
         # use to debug, ignore cache on creating deployment
         imagePullPolicy: Always
+        # this command override the one defined in Dockerfile
+        command: ["/bin/sh", "start_recomender.sh"]
       # restart only if container not exited successfully
       # this container is run once
       restartPolicy: onFailure 
