@@ -19,6 +19,6 @@ spec:
         imagePullPolicy: Always
         # this command override the one defined in Dockerfile
         command: ["/bin/sh", "start_recomender.sh"]
+        restartPolicy: Never
       # restart only if container not exited successfully
-      # this container is run once
-      restartPolicy: OnFailure 
+      restartPolicy: Always 
