@@ -18,4 +18,5 @@ spec:
         # use to debug, ignore cache on creating deployment
         imagePullPolicy: Always
         # this command override the one defined in Dockerfile
-        command: ["/bin/sh", "start_recomender.sh"]
+        # does not working, because working directory not set here
+        #command: ["/bin/sh", "start_recomender.sh"]
